@@ -10,7 +10,6 @@
   padding: 37px;
   z-index: 1;
   background: var(--white);
-
   @media (max-width: 860px) {
     flex-wrap: wrap;
     justify-content: center;
@@ -43,7 +42,6 @@
     text-transform: unset;
     font-size: 16px;
   }
-
   @media (max-width: 860px) {
     flex-basis: 100%;
     justify-content: center;
@@ -51,11 +49,6 @@
 }
 
 .Button {
-  padding: 1px 2px;
-  border-radius: 5px;
-  color: var(--white);
-  background-color: var(--black);
-  :hover {
-    border-bottom: none;
-  }
+  background-color: var(--black) !important;
+  color: var(--white) !important;
 }

@@ -8,7 +8,9 @@ export default function Header() {
       <ul className={Styles.Menu}>
         <Button size="small">Home</Button>
         <Button size="small">Contact</Button>
-        <Button size="small">Portfolio</Button>
+        <Button className={Styles.Button} variant="contained" size="small">
+          Portfolio
+        </Button>
       </ul>
     </header>
   )
