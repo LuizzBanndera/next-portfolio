@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Styles from './Home.module.scss'
 import ProfilePic from 'public/images/profile.jpg'
 import podcast from 'public/images/illustrations/podcast.svg'
-import GitHub from 'public/images/social/github.png'
-import Twitter from 'public/images/social/twitter.png'
-import Instagram from 'public/images/social/instagram.png'
-import Linkedin from 'public/images/social/linkedin.png'
+import GitHub from 'public/images/social/github.svg'
+import Twitter from 'public/images/social/twitter.svg'
+import Instagram from 'public/images/social/instagram.svg'
+import Linkedin from 'public/images/social/linkedin.svg'
 
 export default function Home() {
   const bio = `Hello! My name is Luiz Filipe. I'm a Brazilian developer actually
@@ -14,7 +14,7 @@ export default function Home() {
   I've been working as a developer for about 4 years since I graduated
   from college.`
 
-  const socialSize = 18
+  const socialSize = 30
 
   return (
     <>
