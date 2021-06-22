@@ -37,11 +37,12 @@
   list-style-type: none;
   cursor: pointer;
   padding-left: 0;
+  user-select: none;
 
-  button {
-    text-transform: unset;
-    font-size: 16px;
+  a {
+    text-transform: none;
   }
+
   @media (max-width: 860px) {
     flex-basis: 100%;
     justify-content: center;
@@ -51,4 +52,5 @@
 .Button {
   background-color: var(--black) !important;
   color: var(--white) !important;
+  text-transform: none !important;
 }

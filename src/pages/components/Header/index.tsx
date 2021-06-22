@@ -1,6 +1,7 @@
-import Styles from './Header.module.scss'
+import Link from 'next/link'
 import Button from '@material-ui/core/Button'
 import { motion } from 'framer-motion'
+import Styles from './Header.module.scss'
 
 export default function Header() {
   return (
@@ -12,14 +13,22 @@ export default function Header() {
         }}
         whileTap={{ scale: 0.9 }}
       >
-        <button className={Styles.Logo}>LB</button>
+        <Link href="/" passHref>
+          <button className={Styles.Logo}>LB</button>
+        </Link>
       </motion.div>
       <ul className={Styles.Menu}>
-        <Button size="small">Home</Button>
-        <Button size="small">Contact</Button>
-        <Button className={Styles.Button} variant="contained" size="small">
-          Portfolio
-        </Button>
+        <Link href="/" passHref>
+          <Button size="small">Home</Button>
+        </Link>
+        <Link href="/contact" passHref>
+          <Button size="small">Contact</Button>
+        </Link>
+        <Link href="/portfolio" passHref>
+          <Button className={Styles.Button} variant="contained" size="small">
+            Portfolio
+          </Button>
+        </Link>
       </ul>
     </header>
   )

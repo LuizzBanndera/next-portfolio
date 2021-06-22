@@ -8,7 +8,7 @@ import Instagram from 'public/images/social/instagram.svg'
 import Linkedin from 'public/images/social/linkedin.svg'
 
 export default function Home() {
-  const bio = `Hello! My name is Luiz Filipe. I'm a Brazilian developer actually
+  const bio = `Hello! My name is Luiz Filipe B Alves. I'm a Brazilian developer actually
   working as a Delphi developer and learning JS/TS, React, Node. in my free
   time i usually work on personal projects for study or freelancer jobs.
   I've been working as a developer for about 4 years since I graduated
@@ -37,7 +37,7 @@ export default function Home() {
                 width={socialSize}
                 height={socialSize}
               />
-              /luizzbanndera
+              <a href="https://github.com/luizzbanndera">/luizzbanndera</a>
             </li>
             <li>
               <Image
@@ -46,7 +46,7 @@ export default function Home() {
                 width={socialSize}
                 height={socialSize}
               />
-              @luiz_bandeira1
+              <a href="https://twitter.com/luiz_bandeira1">@luiz_bandeira1</a>
             </li>
             <li>
               <Image
@@ -55,7 +55,9 @@ export default function Home() {
                 width={socialSize}
                 height={socialSize}
               />
-              /luizfilipe.bandeira
+              <a href="https://www.instagram.com/luizfilipe.bandeira">
+                /luizfilipe.bandeira
+              </a>
             </li>
             <li>
               <Image
@@ -64,7 +66,9 @@ export default function Home() {
                 width={socialSize}
                 height={socialSize}
               />
-              /luizfbandeira
+              <a href="https://www.linkedin.com/in/luizfbandeira/">
+                /luizfbandeira
+              </a>
             </li>
           </ul>
         </div>
