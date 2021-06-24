@@ -1,11 +1,15 @@
+import Styles from './portfolio.module.scss'
+import Card from '../components/card'
 import Header from '../components/header'
-import Styles from '../../styles/Root.module.scss'
 
 export default function Contact() {
   return (
     <div className={Styles.Container}>
       <Header />
-      <div className={Styles.Content}>portfolio</div>
+      <div className={Styles.Content}>
+        <h1>Recent Projects</h1>
+        <Card />
+      </div>
     </div>
   )
 }
