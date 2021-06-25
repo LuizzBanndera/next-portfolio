@@ -8,7 +8,10 @@ export default function Contact() {
       <Header />
       <div className={Styles.Content}>
         <h1>Recent Projects</h1>
-        <Card />
+        <div className={Styles.Cards}>
+          <Card />
+          <Card />
+        </div>
       </div>
     </div>
   )

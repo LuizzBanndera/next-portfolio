@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Styles from './Home.module.scss'
+import Styles from './home.module.scss'
 import ProfilePic from 'public/images/profile.jpg'
 import podcast from 'public/images/illustrations/podcast.svg'
 import GitHub from 'public/images/social/github.svg'

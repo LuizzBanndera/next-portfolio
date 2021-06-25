@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Button from '@material-ui/core/Button'
 import { motion } from 'framer-motion'
-import Styles from './Header.module.scss'
+import Styles from './header.module.scss'
 
 export default function Header() {
   return (
