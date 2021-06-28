@@ -20,11 +20,9 @@ export default function Home() {
     <>
       <div className={Styles.Home}>
         <div className={Styles.Profile}>
-          <Image
-            className={Styles.Picture}
-            src={ProfilePic}
-            alt="Profile Picture"
-          />
+          <div className={Styles.Picture}>
+            <Image src={ProfilePic} alt="Profile Picture" />
+          </div>
           <div className={Styles.About}>
             <h1>Hi there!</h1>
             <span>{bio}</span>
