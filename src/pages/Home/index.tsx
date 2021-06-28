@@ -19,10 +19,12 @@ export default function Home() {
   return (
     <>
       <div className={Styles.Home}>
-        <div className={Styles.Bio}>
-          <div className={Styles.ProfilePic}>
-            <Image src={ProfilePic} alt="Profile Picture" />
-          </div>
+        <div className={Styles.Profile}>
+          <Image
+            className={Styles.Picture}
+            src={ProfilePic}
+            alt="Profile Picture"
+          />
           <div className={Styles.About}>
             <h1>Hi there!</h1>
             <span>{bio}</span>
@@ -73,8 +75,8 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className={Styles.BackGround}>
-        <Image src={podcast} alt="Ilustration" />
+      <div className={Styles.Illustration}>
+        <Image src={podcast} alt="Background" />
       </div>
     </>
   )
