@@ -20,6 +20,12 @@ a {
 :root {
   --white: #eeeff1;
   --black: #000000;
+
+  --xsmall: 574px;
+  --small: (860px);
+  --medium: (max-width: 1366px);
+  --large: (max-width: 1536px);
+  --xlarge: (max-width: 1920px);
 }
 
 @media (max-width: 1080p) {

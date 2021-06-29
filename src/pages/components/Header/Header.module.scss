@@ -12,7 +12,6 @@
   background: var(--white);
 
   @media (max-width: 860px) {
-    position: absolute;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -28,6 +27,7 @@
   border: var(--black);
   border-style: solid;
   cursor: pointer;
+  border-width: medium;
 }
 
 .Menu {

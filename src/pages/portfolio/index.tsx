@@ -9,7 +9,7 @@ export default function Contact() {
       <Header />
       <div className={Styles.Content}>
         <h1>Recent Projects</h1>
-        <div className={Styles.Cards}>
+        <div className={Styles.Body}>
           <Card
             Style={{ 'align-self': 'flex-start' }}
             Title="Portfolio"
@@ -35,10 +35,6 @@ export default function Contact() {
             }
           />
           <Card
-            Style={{
-              'align-self': 'flex-end',
-              'flex-direction': 'row-reverse',
-            }}
             Title="Puby"
             Description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.`}
             Tags={
