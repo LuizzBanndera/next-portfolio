@@ -1,31 +1,42 @@
 import Styles from './card.module.scss'
-import { Card, CardContent } from '@material-ui/core'
-import Pic from 'public/images/profile.jpg'
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from '@material-ui/core'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function Cards(props: any) {
+type TCard = {
+  title: string
+  tags: JSX.Element
+  image: StaticImageData
+  description: string
+}
+
+export default function Cards(props: TCard) {
   const cardtext = `Lorem Ipsum is simply dummy text of the printing and typesetting industry.`
 
   return (
-    <Card style={props.Style} raised className={Styles.Container}>
-      <Image
-        className={Styles.picture}
-        src={Pic}
-        alt="image"
-        width={517}
-        height={217}
-        objectFit="cover"
-      />
-      <CardContent className={Styles.Content}>
-        <div className={Styles.Body}>
-          <div className={Styles.Info}>
-            <h1 className={Styles.title}>{props.Title}</h1>
-            <div className={Styles.Tags}>{props.Tags}</div>
-            <h4 className={Styles.description}>{props.Description}</h4>
-          </div>
-        </div>
-      </CardContent>
+    <Card raised className={Styles.Container}>
+      <CardMedia className={Styles.Picture}>
+        <Image
+          src={props.image}
+          alt="image"
+          width={517}
+          height={230}
+          objectFit="cover"
+        />
+      </CardMedia>
+      <CardActionArea className={Styles.Body}>
+        {/* <CardContent className={Styles.Body}> */}
+        <h1 className={Styles.title}>{props.title}</h1>
+        <div className={Styles.Tags}>{props.tags}</div>
+        <h4 className={Styles.description}>{props.description}</h4>
+        {/* </CardContent> */}
+      </CardActionArea>
     </Card>
   )
 }

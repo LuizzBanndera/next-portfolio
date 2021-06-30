@@ -2,6 +2,8 @@ import Styles from './portfolio.module.scss'
 import Card from '../components/card'
 import Header from '../components/header'
 import Tags from '../components/tags'
+import Portfolio from 'public/images/profile.png'
+import Puby from 'public/images/example.jpg'
 
 export default function Contact() {
   return (
@@ -11,10 +13,10 @@ export default function Contact() {
         <h1>Recent Projects</h1>
         <div className={Styles.Body}>
           <Card
-            Style={{ 'align-self': 'flex-start' }}
-            Title="Portfolio"
-            Description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.`}
-            Tags={
+            title="Portfolio"
+            image={Portfolio}
+            description={`This own project made by me using Next-Js, scss.`}
+            tags={
               <>
                 <Tags
                   description="node"
@@ -35,9 +37,11 @@ export default function Contact() {
             }
           />
           <Card
-            Title="Puby"
-            Description={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.`}
-            Tags={
+            title="Puby"
+            image={Puby}
+            description={`This one is a Delivery project that i colaborated with mainly in the front-end,
+             Worked with redux and aws cognito authentication services...`}
+            tags={
               <>
                 <Tags
                   description="typescript"

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Styles from './home.module.scss'
-import ProfilePic from 'public/images/profile.jpg'
+import ProfilePic from 'public/images/profile.png'
 import podcast from 'public/images/illustrations/podcast.svg'
 import GitHub from 'public/images/social/github.svg'
 import Twitter from 'public/images/social/twitter.svg'
@@ -9,10 +9,10 @@ import Linkedin from 'public/images/social/linkedin.svg'
 
 export default function Home() {
   const bio = `Hello! My name is Luiz Filipe B Alves. I'm a Brazilian developer actually
-  working as a Delphi developer and learning JS/TS, React, Node. in my free
+  working with Delphi and learning JS/TS, React, Node. in my free
   time i usually work on personal projects for study or freelancer jobs.
   I've been working as a developer for about 4 years since I graduated
-  from college.`
+  from college. Checkout my Portfolio ;)`
 
   const socialSize = 30
 
