@@ -1,3 +1,20 @@
+.Content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 2rem;
+  margin-top: 135px;
+
+  button {
+    margin-top: 10px;
+    text-transform: none;
+  }
+  .Alert {
+    margin-top: 10px;
+  }
+}
+
 .Form {
   display: grid;
   grid-template-columns: 1.1fr 1.1fr;
@@ -18,29 +35,14 @@
   }
 
   @media (max-width: 860px) {
+    display: grid;
     width: 100%;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+
+    grid-template-rows: 0.2fr 0.2fr;
     grid-template-areas:
       'username username'
       'email email'
       'memo memo';
-  }
-}
-
-.Content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-top: 130px;
-  padding: 2rem;
-
-  button {
-    margin-top: 10px;
-    text-transform: none;
-  }
-  .Alert {
-    margin-top: 10px;
   }
 }
 

@@ -84,7 +84,7 @@ export default function Home() {
       </div>
       <div className={Styles.Illustration}>
         <div className="animate__animated animate__slideInUp">
-          <Image src={podcast} alt="Background" />
+          <Image quality={100} src={podcast} alt="Background" />
         </div>
       </div>
     </>

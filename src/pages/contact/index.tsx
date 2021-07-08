@@ -44,11 +44,14 @@ export default function Contact() {
       <Header />
       <form className={Styles.Content}>
         <h1 style={{ marginTop: 0 }}>Want to get in touch?</h1>
-        <div className="animate__animated animate__fadeInUp animate__delay-0.5s">
+        <div
+          className={`${
+            Styles.Body
+          } ${'animate__animated animate__fadeInUp animate__delay-0.5s'} `}
+        >
           <div className={Styles.Form}>
             <TextField
               variant="outlined"
-              fullWidth={false}
               label="Name"
               size="small"
               type="text"
@@ -57,7 +60,7 @@ export default function Contact() {
             />
             <TextField
               variant="outlined"
-              fullWidth={false}
+              fullWidth
               label="Email"
               size="small"
               type="email"
@@ -65,6 +68,7 @@ export default function Contact() {
               onChange={(e: any) => setEmail(e.target.value)}
             />
             <TextField
+              fullWidth
               variant="outlined"
               label="Your message"
               type="text"
