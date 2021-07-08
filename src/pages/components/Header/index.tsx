@@ -6,13 +6,7 @@ import Styles from './header.module.scss'
 export default function Header() {
   return (
     <header className={Styles.Container}>
-      <motion.div
-        whileHover={{
-          scale: 1.2,
-          transition: { duration: 0.3 },
-        }}
-        whileTap={{ scale: 0.9 }}
-      >
+      <motion.div whileHover={{ scale: 1.2 }}>
         <Link href="/" passHref>
           <button className={Styles.Logo}>LB</button>
         </Link>

@@ -12,9 +12,14 @@ export default function Home() {
   working with Delphi and learning JS/TS, React, Node. in my free
   time i usually work on personal projects for study or freelancer jobs.
   I've been working as a developer for about 4 years since I graduated
-  from college. Checkout my Portfolio ;)`
+  from college. Checkout my Portfolio.`
 
   const socialSize = 30
+
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  }
 
   return (
     <>
@@ -25,56 +30,62 @@ export default function Home() {
           </div>
           <div className={Styles.About}>
             <h1>Hi there!</h1>
-            <span>{bio}</span>
+            <div className="animate__animated animate__slideInUp">
+              <span>{bio}</span>
+            </div>
           </div>
         </div>
-        <div className={Styles.Social}>
-          <ul>
-            <li>
-              <Image
-                src={GitHub}
-                alt="GitHub"
-                width={socialSize}
-                height={socialSize}
-              />
-              <a href="https://github.com/luizzbanndera">/luizzbanndera</a>
-            </li>
-            <li>
-              <Image
-                src={Twitter}
-                alt="Twitter"
-                width={socialSize}
-                height={socialSize}
-              />
-              <a href="https://twitter.com/luiz_bandeira1">@luiz_bandeira1</a>
-            </li>
-            <li>
-              <Image
-                src={Instagram}
-                alt="Instagram"
-                width={socialSize}
-                height={socialSize}
-              />
-              <a href="https://www.instagram.com/luizfilipe.bandeira">
-                /luizfilipe.bandeira
-              </a>
-            </li>
-            <li>
-              <Image
-                src={Linkedin}
-                alt="Linkedin"
-                width={socialSize}
-                height={socialSize}
-              />
-              <a href="https://www.linkedin.com/in/luizfbandeira/">
-                /luizfbandeira
-              </a>
-            </li>
-          </ul>
+        <div className="animate__animated animate__slideInUp">
+          <div className={Styles.Social}>
+            <ul>
+              <li>
+                <Image
+                  src={GitHub}
+                  alt="GitHub"
+                  width={socialSize}
+                  height={socialSize}
+                />
+                <a href="https://github.com/luizzbanndera">/luizzbanndera</a>
+              </li>
+              <li>
+                <Image
+                  src={Twitter}
+                  alt="Twitter"
+                  width={socialSize}
+                  height={socialSize}
+                />
+                <a href="https://twitter.com/luiz_bandeira1">@luiz_bandeira1</a>
+              </li>
+              <li>
+                <Image
+                  src={Instagram}
+                  alt="Instagram"
+                  width={socialSize}
+                  height={socialSize}
+                />
+                <a href="https://www.instagram.com/luizfilipe.bandeira">
+                  /luizfilipe.bandeira
+                </a>
+              </li>
+              <li>
+                <Image
+                  src={Linkedin}
+                  alt="Linkedin"
+                  width={socialSize}
+                  height={socialSize}
+                />
+                <a href="https://www.linkedin.com/in/luizfbandeira/">
+                  /luizfbandeira
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className={Styles.Illustration}>
-        <Image src={podcast} alt="Background" />
+        <div className="animate__animated animate__slideInUp">
+          <Image src={podcast} alt="Background" />
+        </div>
       </div>
     </>
   )
