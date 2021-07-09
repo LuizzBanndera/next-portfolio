@@ -42,29 +42,28 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <form className={Styles.Content}>
+      <div className={Styles.content}>
         <h1 style={{ marginTop: 0 }}>Want to get in touch?</h1>
         <div
           className={`${
-            Styles.Body
-          } ${'animate__animated animate__fadeInUp animate__delay-0.5s'} `}
+            Styles.body
+          } ${'animate__animated animate__fadeIn animate__delay-1s'}`}
         >
-          <div className={Styles.Form}>
+          <div className={Styles.form}>
             <TextField
               variant="outlined"
               label="Name"
               size="small"
               type="text"
-              className={Styles.Username}
+              className={Styles.username}
               onChange={(e: any) => setUsername(e.target.value)}
             />
             <TextField
               variant="outlined"
-              fullWidth
               label="Email"
               size="small"
               type="email"
-              className={Styles.Email}
+              className={Styles.email}
               onChange={(e: any) => setEmail(e.target.value)}
             />
             <TextField
@@ -74,7 +73,7 @@ export default function Contact() {
               type="text"
               rows={6}
               multiline
-              className={Styles.Memo}
+              className={Styles.message}
               onChange={(e: any) => setMessage(e.target.value)}
             />
           </div>
@@ -82,22 +81,21 @@ export default function Contact() {
             type="submit"
             variant="contained"
             color="secondary"
+            className={Styles.button}
             onClick={(e: any) => onSubmit(e)}
           >
             Send
           </Button>
           <span
+            className={Styles.alert}
             style={{ visibility: emailSent ? 'visible' : 'hidden' }}
-            className={Styles.Alert}
           >
             {alert}
           </span>
         </div>
-      </form>
-      <div className={Styles.BackGround}>
-        <div className="animate__animated animate__slideInUp">
-          <Image src={CoffeCall} alt="Illustration" />
-        </div>
+      </div>
+      <div className={Styles.backGround}>
+        <Image src={CoffeCall} alt="Illustration" />
       </div>
     </>
   )

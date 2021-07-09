@@ -1,59 +1,46 @@
-.Content {
+.content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
   padding: 2rem;
   margin-top: 135px;
-
-  button {
-    margin-top: 10px;
-    text-transform: none;
-  }
-  .Alert {
-    margin-top: 10px;
-  }
+  overflow: hidden;
 }
 
-.Form {
-  display: grid;
-  grid-template-columns: 1.1fr 1.1fr;
-  grid-template-rows: 0.2fr 0.2fr;
+.body {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  grid-template-areas:
-    'username email'
-    'memo memo';
-
-  .Memo {
-    grid-area: memo;
-  }
-  .Username {
-    grid-area: username;
-  }
-  .Email {
-    grid-area: email;
-  }
-
-  @media (max-width: 860px) {
-    display: grid;
-    width: 100%;
-
-    grid-template-rows: 0.2fr 0.2fr;
-    grid-template-areas:
-      'username username'
-      'email email'
-      'memo memo';
+  overflow: hidden;
+  .button {
+    max-width: 100px;
   }
 }
 
-.BackGround {
+.form {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 40rem;
+
+  .username {
+    flex-grow: 1;
+  }
+  .email {
+    flex-grow: 4;
+  }
+  .message {
+    flex-grow: 5;
+  }
+}
+
+.backGround {
+  overflow: hidden;
   position: fixed;
-  bottom: -70px;
+  bottom: -10px;
   right: 4px;
   z-index: -1;
-  img {
-    width: 576px;
-  }
+
   @media (max-width: 860px) {
     visibility: hidden;
   }

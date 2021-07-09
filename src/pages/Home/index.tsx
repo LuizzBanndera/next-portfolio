@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Styles from './home.module.scss'
 import ProfilePic from 'public/images/profile.png'
-import podcast from 'public/images/illustrations/podcast.svg'
+import podcast from 'public/images/illustrations/Podcast.svg'
 import GitHub from 'public/images/social/github.svg'
 import Twitter from 'public/images/social/twitter.svg'
 import Instagram from 'public/images/social/instagram.svg'
@@ -16,16 +16,15 @@ export default function Home() {
 
   const socialSize = 30
 
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  }
-
   return (
     <>
       <div className={Styles.Home}>
         <div className={Styles.Profile}>
-          <div className={Styles.Picture}>
+          <div
+            className={`${
+              Styles.Picture
+            } ${'animate__animated animate__fadeIn animate__delay-1s'}`}
+          >
             <Image src={ProfilePic} alt="Profile Picture" />
           </div>
           <div className={Styles.About}>
@@ -83,9 +82,7 @@ export default function Home() {
         </div>
       </div>
       <div className={Styles.Illustration}>
-        <div className="animate__animated animate__slideInUp">
-          <Image quality={100} src={podcast} alt="Background" />
-        </div>
+        <Image quality={100} src={podcast} alt="Background" />
       </div>
     </>
   )
