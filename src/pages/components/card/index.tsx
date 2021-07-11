@@ -8,12 +8,13 @@ type TCard = {
   tags: JSX.Element
   image: StaticImageData
   description: string
+  onClick?: any
 }
 
 export default function Cards(props: TCard) {
   return (
     <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.999 }}>
-      <Card raised className={Styles.Container}>
+      <Card raised className={Styles.Container} onClick={props.onClick}>
         <CardMedia className={Styles.Picture}>
           <Image
             src={props.image}

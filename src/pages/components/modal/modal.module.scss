@@ -1,0 +1,33 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper {
+  overflow: auto;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 2rem;
+  color: var(--black);
+  max-width: 60rem;
+  border-style: hidden;
+  font-size: 14px;
+  max-height: 80%;
+
+  ul {
+    padding-left: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  a {
+    color: var(--pink);
+  }
+
+  @media (max-width: 860px) {
+    max-width: 90%;
+  }
+}
