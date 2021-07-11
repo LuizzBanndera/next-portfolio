@@ -23,6 +23,7 @@ export default function Cards(props: TCard) {
             height={172}
             objectFit="cover"
             quality={100}
+            priority
           />
         </CardMedia>
         <CardActionArea className={Styles.Body}>

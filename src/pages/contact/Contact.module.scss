@@ -3,7 +3,6 @@
   flex-direction: column;
   padding: 2rem;
   margin-top: 135px;
-  overflow: hidden;
 }
 
 .body {
@@ -13,6 +12,11 @@
   overflow: hidden;
   .button {
     max-width: 100px;
+  }
+
+  .alert {
+    width: fit-content;
+    margin-left: 20px;
   }
 }
 

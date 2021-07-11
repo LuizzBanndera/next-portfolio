@@ -45,9 +45,7 @@ export default function Contact() {
       <div className={Styles.content}>
         <h1 style={{ marginTop: 0 }}>Want to get in touch?</h1>
         <div
-          className={`${
-            Styles.body
-          } ${'animate__animated animate__fadeIn animate__delay-1s'}`}
+          className={`${Styles.body} ${'animate__animated animate__fadeInUp '}`}
         >
           <div className={Styles.form}>
             <TextField
@@ -77,21 +75,23 @@ export default function Contact() {
               onChange={(e: any) => setMessage(e.target.value)}
             />
           </div>
-          <Button
-            type="submit"
-            variant="contained"
-            color="secondary"
-            className={Styles.button}
-            onClick={(e: any) => onSubmit(e)}
-          >
-            Send
-          </Button>
-          <span
-            className={Styles.alert}
-            style={{ visibility: emailSent ? 'visible' : 'hidden' }}
-          >
-            {alert}
-          </span>
+          <div>
+            <Button
+              type="submit"
+              variant="contained"
+              color="secondary"
+              className={Styles.button}
+              onClick={(e: any) => onSubmit(e)}
+            >
+              Send
+            </Button>
+            <span
+              className={Styles.alert}
+              style={{ visibility: emailSent ? 'visible' : 'hidden' }}
+            >
+              {alert}
+            </span>
+          </div>
         </div>
       </div>
       <div className={Styles.backGround}>
