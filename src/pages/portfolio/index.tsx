@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import Styles from './portfolio.module.scss'
-import Card from '../components/card'
-import Header from '../components/header'
-import Tags from '../components/tags'
-import Portfolio from 'public/images/portfolio.png'
-import Puby from 'public/images/puby.png'
-import Modal from '../components/modal'
+import Card from '@components/card'
+import Header from '@components/header'
+import Tags from '@components/tags'
+import Portfolio from '@public/images/portfolio.png'
+import Puby from '@public/images/puby.png'
+import Modal from '@components/modal'
 import { useAppContext } from '@ctx/state'
 
 export default function Contact() {

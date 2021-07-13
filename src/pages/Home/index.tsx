@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Styles from './home.module.scss'
-import ProfilePic from 'public/images/profile.png'
-import podcast from 'public/images/illustrations/Podcast.svg'
-import GitHub from 'public/images/social/github.svg'
-import Twitter from 'public/images/social/twitter.svg'
-import Instagram from 'public/images/social/instagram.svg'
-import Linkedin from 'public/images/social/linkedin.svg'
+import ProfilePic from '@public/images/profile.png'
+import podcast from '@public/images/illustrations/Podcast.svg'
+import GitHub from '@public/images/social/github.svg'
+import Twitter from '@public/images/social/twitter.svg'
+import Instagram from '@public/images/social/instagram.svg'
+import Linkedin from '@public/images/social/linkedin.svg'
 
 export default function Home() {
   const bio = `Hello! My name is Luiz Filipe B Alves. I'm a Brazilian developer actually
