@@ -17,10 +17,6 @@
     flex-grow: 2;
   }
 
-  h1 {
-    margin-top: 0;
-  }
-
   button {
     margin-top: 10px;
     text-transform: none;
@@ -35,4 +31,8 @@
   .Content {
     align-items: center;
   }
+}
+
+#title {
+  text-align: center;
 }

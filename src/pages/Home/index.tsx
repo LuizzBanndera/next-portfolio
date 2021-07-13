@@ -18,16 +18,16 @@ export default function Home() {
 
   return (
     <>
-      <div className={Styles.Home}>
-        <div className={Styles.Profile}>
+      <div className={Styles.home}>
+        <div className={Styles.profile}>
           <div
             className={`${
-              Styles.Picture
-            } ${'animate__animated animate__fadeIn animate__delay-1s'}`}
+              Styles.picture
+            } ${'animate__animated animate__fadeIn'}`}
           >
             <Image src={ProfilePic} alt="Profile Picture" />
           </div>
-          <div className={Styles.About}>
+          <div className={Styles.about}>
             <h1>Hi there!</h1>
             <div className="animate__animated animate__slideInUp">
               <span>{bio}</span>
@@ -35,9 +35,9 @@ export default function Home() {
           </div>
         </div>
         <div className="animate__animated animate__slideInUp">
-          <div className={Styles.Social}>
+          <div className={Styles.social}>
             <ul>
-              <li>
+              <li className="animate__animated animate__slideInLeft">
                 <Image
                   src={GitHub}
                   alt="GitHub"
@@ -46,7 +46,7 @@ export default function Home() {
                 />
                 <a href="https://github.com/luizzbanndera">/luizzbanndera</a>
               </li>
-              <li>
+              <li className="animate__animated animate__slideInLeft">
                 <Image
                   src={Twitter}
                   alt="Twitter"
@@ -55,7 +55,7 @@ export default function Home() {
                 />
                 <a href="https://twitter.com/luiz_bandeira1">@luiz_bandeira1</a>
               </li>
-              <li>
+              <li className="animate__animated animate__slideInLeft">
                 <Image
                   src={Instagram}
                   alt="Instagram"
@@ -66,7 +66,7 @@ export default function Home() {
                   /luizfilipe.bandeira
                 </a>
               </li>
-              <li>
+              <li className="animate__animated animate__slideInLeft">
                 <Image
                   src={Linkedin}
                   alt="Linkedin"
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={Styles.Illustration}>
+      <div className={Styles.illustration}>
         <Image quality={100} src={podcast} alt="Background" />
       </div>
     </>

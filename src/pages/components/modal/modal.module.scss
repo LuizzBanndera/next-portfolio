@@ -19,15 +19,11 @@
     padding-left: 20px;
   }
 
-  h2 {
-    text-align: center;
-  }
-
   a {
     color: var(--pink);
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 1080px) {
     max-width: 90%;
   }
 }
