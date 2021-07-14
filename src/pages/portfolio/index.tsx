@@ -4,7 +4,7 @@ import { useAppContext } from '@ctx/state'
 
 //componenets
 import Card from '../components/card'
-import Header from '../components/headerr'
+import Header from '../components/header'
 import Tags from '../components/tags'
 import Modal from '../components/modal'
 

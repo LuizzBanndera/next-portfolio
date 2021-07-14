@@ -1,6 +1,6 @@
 import Styles from '../styles/Root.module.scss'
-import Header from './components/headerr'
-import Home from './homer'
+import Header from './components/header'
+import Home from './home'
 
 export default function Root() {
   return (
