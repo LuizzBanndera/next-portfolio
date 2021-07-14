@@ -6,6 +6,7 @@ import Tags from '@components/tags'
 import Portfolio from '@public/images/portfolio.png'
 import Puby from '@public/images/puby.png'
 import Modal from '@components/modal'
+import TsFrontSvg from '../../../public/images/tsfront.png'
 import { useAppContext } from '@ctx/state'
 
 export default function Contact() {
@@ -13,11 +14,13 @@ export default function Contact() {
 
   const [portfolio, setPortfolio] = useState(false)
   const [puby, setPuby] = useState(false)
+  const [tsfront, setTsFront] = useState(false)
 
   useEffect(() => {
     if (ctx.modal.isOpen === false) {
       setPortfolio(false)
       setPuby(false)
+      setTsFront(false)
     }
   }, [ctx.modal.isOpen])
 
@@ -65,7 +68,7 @@ export default function Contact() {
                       aqui.
                     </a>
                   </div>
-                  <h1>Técnologias</h1>
+                  <h1>Tecnologias</h1>
                   <ul>
                     <li>
                       <strong>Typescritpt: </strong>
@@ -92,8 +95,7 @@ export default function Contact() {
                 title="Puby"
                 image={Puby}
                 onClick={() => setPuby(true)}
-                description={`Web App Delivery que colaborei no front-end,
-                utilizando técnologias como redux e aws cognito...`}
+                description={`App de delivery que para fazer pedidos em uma página web...`}
                 tags={
                   <>
                     <Tags
@@ -118,11 +120,11 @@ export default function Contact() {
                 <>
                   <h1 id={Styles.title}>Sobre o Puby</h1>
                   <div>
-                    {`Puby é um app de delivery que permite ao usuário fazer pedidos em uma página web por meio
+                    {`App de delivery que permite ao usuário fazer pedidos em uma página web por meio
                      de um link que o estabelecimento envia via whatsapp. O estabelecimento possui uma página web que mostra os 
                      pedidos recebidos em tempo real.`}
                   </div>
-                  <h1>Técnologias</h1>
+                  <h1>Tecnologias</h1>
                   <ul>
                     <li>
                       <strong>Typescritpt: </strong>
@@ -139,6 +141,51 @@ export default function Contact() {
                       <strong>Sass: </strong>
                       {`Uma alternativa mais completa ao css que permite mais facilidade 
                       na estilização das paginas.`}
+                    </li>
+                  </ul>
+                </>
+              </Modal>
+              <Card
+                title="TS-Front"
+                image={TsFrontSvg}
+                onClick={() => setTsFront(true)}
+                description={`Template para dashboard que ja pré-configurado...`}
+                tags={
+                  <>
+                    <Tags
+                      description="typescript"
+                      background="#1066bf"
+                      fontColor="whitesmoke"
+                    />
+                    <Tags
+                      description="styled"
+                      background="#764abc"
+                      fontColor="whitesmoke"
+                    />
+                  </>
+                }
+              />
+              <Modal isOpen={tsfront}>
+                <>
+                  <h1 id={Styles.title}>Sobre o TS-Front</h1>
+                  <div>
+                    {`A idéia era desenvolver um template simples para dashboard que ja vem pré-configurado para que você so precise 
+                informar as rotas das paginas que criar e os icones que deseja para cada item do menu.
+                Utilizei typescript e styled-components para todos os elementos. Você pode verificar o repositório `}
+                    <a href="https://github.com/LuizzBanndera/ts-front">
+                      aqui.
+                    </a>
+                  </div>
+                  <h1>Tecnologias</h1>
+                  <ul>
+                    <li>
+                      <strong>Typescritpt: </strong>
+                      {`O projeto possui as práticas de tipagem mais utilizadas.`}
+                    </li>
+                    <br />
+                    <li>
+                      <strong>Styled: </strong>
+                      {`Utilizei styled-components em todo o projeto com um unico arquivo para componente e estilização.`}
                     </li>
                   </ul>
                 </>
