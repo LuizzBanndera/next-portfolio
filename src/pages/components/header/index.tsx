@@ -16,11 +16,11 @@ export default function Header() {
           <Button size="small">Home</Button>
         </Link>
         <Link href="/contact" passHref>
-          <Button size="small">Contact</Button>
+          <Button size="small">Contato</Button>
         </Link>
         <Link href="/portfolio" passHref>
           <Button className={Styles.Button} variant="contained" size="small">
-            Portfolio
+            Portfólio
           </Button>
         </Link>
       </ul>

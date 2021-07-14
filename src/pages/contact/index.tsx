@@ -19,18 +19,18 @@ export default function Contact() {
 
     try {
       if (!username || !email || !message) {
-        setAlert('Please enter your details!')
+        setAlert('Por favor, preencha todos os campos!')
         setEmailSent(true)
         return
       }
-      setAlert('Sending email!')
+      setAlert('Enviando email!')
       setEmailSent(true)
       const result = await axios.post('/api/contact', data)
       if (result) {
-        setAlert('Email sent!')
+        setAlert('Email enviado =)')
         setEmailSent(true)
       } else {
-        setAlert('Email sent failure!')
+        setAlert('Falha no envio do email =(')
         setEmailSent(false)
       }
     } catch (error) {
@@ -43,14 +43,14 @@ export default function Contact() {
     <>
       <Header />
       <div className={Styles.content}>
-        <h1 style={{ marginTop: 0 }}>Want to get in touch?</h1>
+        <h1 style={{ marginTop: 0 }}>Deseja entrar em contato?</h1>
         <div
           className={`${Styles.body} ${'animate__animated animate__fadeInUp '}`}
         >
           <div className={Styles.form}>
             <TextField
               variant="outlined"
-              label="Name"
+              label="Nome"
               size="small"
               type="text"
               className={Styles.username}
@@ -67,7 +67,7 @@ export default function Contact() {
             <TextField
               fullWidth
               variant="outlined"
-              label="Your message"
+              label="Sua mensagem..."
               type="text"
               rows={6}
               multiline
@@ -83,7 +83,7 @@ export default function Contact() {
               className={Styles.button}
               onClick={(e: any) => onSubmit(e)}
             >
-              Send
+              Enviar
             </Button>
             <span
               className={Styles.alert}
