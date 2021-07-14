@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Header from '../components/header'
+import Header from '../components/headerr'
 import Styles from './contact.module.scss'
 import Image from 'next/image'
 import CoffeCall from '../../../public/images/illustrations/CoffeCall.svg'
