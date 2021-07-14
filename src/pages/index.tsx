@@ -1,4 +1,4 @@
-import Styles from '../styles/Root.module.scss'
+import Styles from '../styles/root.module.scss'
 import Header from './components/header'
 import Home from './home'
 
