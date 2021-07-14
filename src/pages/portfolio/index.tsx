@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react'
 import Styles from './portfolio.module.scss'
-import Card from '@components/card'
-import Header from '@components/header'
-import Tags from '@components/tags'
-import Portfolio from '@public/images/portfolio.png'
-import Puby from '@public/images/puby.png'
-import Modal from '@components/modal'
-import TsFrontSvg from '../../../public/images/tsfront.png'
 import { useAppContext } from '@ctx/state'
+
+//componenets
+import Card from '../components/card'
+import Header from '../components/header'
+import Tags from '../components/tags'
+import Modal from '../components/modal'
+
+//images
+import Portfolio from '../../../public/images/portfolio.png'
+import Puby from '../../../public/images/puby.png'
+import TsFrontSvg from '../../../public/images/tsfront.png'
 
 export default function Contact() {
   const ctx = useAppContext()

@@ -3,7 +3,7 @@ import Styles from './modal.module.scss'
 import Modal from '@material-ui/core/Modal'
 import Fade from '@material-ui/core/Fade'
 import Backdrop from '@material-ui/core/Backdrop'
-import { useAppContext } from '@ctx/state'
+import { useAppContext } from '../../../context/state'
 import { useEffect } from 'react'
 
 type TProps = {

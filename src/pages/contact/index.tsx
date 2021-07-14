@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import Header from '@components/header'
+import Header from '../components/header'
 import Styles from './contact.module.scss'
 import Image from 'next/image'
-import CoffeCall from '@public/images/illustrations/CoffeCall.svg'
+import CoffeCall from '../../../public/images/illustrations/CoffeCall.svg'
 import axios from 'axios'
 import { TextField, Button } from '@material-ui/core'
 
