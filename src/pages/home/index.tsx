@@ -8,11 +8,11 @@ import Instagram from '../../../public/images/social/instagram.svg'
 import Linkedin from '../../../public/images/social/linkedin.svg'
 
 export default function Home() {
-  const bio = `Hello! My name is Luiz Filipe B Alves. I'm a Brazilian developer actually
-  working with Delphi and learning JS/TS, React, Node. in my free
-  time i usually work on personal projects for study or freelancer jobs.
-  I've been working as a developer for about 4 years since I graduated
-  from college. Checkout my Portfolio.`
+  const bio = `Olá, me chamo Luiz  Filipe B Alves, Brasileiro, desenvolvedor e atualmente trabalhando com 
+  delphi, javascript/typescript, react, node. Comecei na carreira de desenvolvedor há 5 anos 
+  logo após finalizar meu curso superior em Análise e Desenvolvimento de Sistemas, há 2 anos estudo 
+  tecnologias derivadas do javascript e sou fascinado por react, na aba portfólio você pode ver alguns 
+  dos meus trabalhos =D.`
 
   const socialSize = 30
 

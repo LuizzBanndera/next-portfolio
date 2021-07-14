@@ -33,7 +33,7 @@ export default function Contact() {
       <div className={Styles.Container}>
         <Header />
         <div className={Styles.Content}>
-          <h1>Recent Projects</h1>
+          <h1>Projetos recentes</h1>
           <div className="animate__animated animate__slideInUp">
             <div className={Styles.Body}>
               <Card
