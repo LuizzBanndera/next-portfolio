@@ -9,6 +9,7 @@
   flex-direction: row;
   gap: 2rem;
   .picture {
+    max-width: 300px;
     img {
       border-radius: 5px;
     }
@@ -17,6 +18,10 @@
   .about {
     display: flex;
     flex-direction: column;
+    max-width: 1280px;
+    span {
+      font-weight: bolder;
+    }
   }
 
   @media (max-width: 860px) {
@@ -34,6 +39,7 @@
     flex-direction: column;
     padding: 0;
     li {
+      font-weight: bolder;
       display: flex;
       align-items: center;
       margin: 6px 0;
