@@ -27,6 +27,7 @@ export default function Contact() {
       setPortfolio(false)
       setPuby(false)
       setTsFront(false)
+      setValorantWiki(false)
     }
   }, [ctx.modal.isOpen])
 
@@ -205,7 +206,7 @@ export default function Contact() {
                 </>
               </Modal>
               <Card
-                title="Valorant-wikii"
+                title="valorant-wikii"
                 image={ValorantWikii}
                 onClick={() => setValorantWiki(true)}
                 description={`Wiki não oficial do jogo VALORANT.`}
