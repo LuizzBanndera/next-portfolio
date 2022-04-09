@@ -44,7 +44,7 @@ export default function Home() {
                   width={socialSize}
                   height={socialSize}
                 />
-                <a href="https://github.com/luizzbanndera">/luizzbanndera</a>
+                <a href="https://github.com/luizzbanndera">/luizfbalves</a>
               </li>
               <li className="animate__animated animate__slideInLeft">
                 <Image
@@ -53,7 +53,7 @@ export default function Home() {
                   width={socialSize}
                   height={socialSize}
                 />
-                <a href="https://twitter.com/luiz_bandeira1">@luiz_bandeira1</a>
+                <a href="https://twitter.com/luiz_bandeira1">@luizfbalves</a>
               </li>
               <li className="animate__animated animate__slideInLeft">
                 <Image

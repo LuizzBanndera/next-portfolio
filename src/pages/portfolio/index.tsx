@@ -12,6 +12,7 @@ import Modal from '../components/modal'
 import Portfolio from '../../../public/images/portfolio.png'
 import Puby from '../../../public/images/puby.png'
 import TsFrontSvg from '../../../public/images/tsfront.png'
+import ValorantWikii from '../../../public/images/valorantwikii.png'
 
 export default function Contact() {
   const ctx = useAppContext()
@@ -19,6 +20,7 @@ export default function Contact() {
   const [portfolio, setPortfolio] = useState(false)
   const [puby, setPuby] = useState(false)
   const [tsfront, setTsFront] = useState(false)
+  const [valorantWiki, setValorantWiki] = useState(false)
 
   useEffect(() => {
     if (ctx.modal.isOpen === false) {
@@ -68,7 +70,11 @@ export default function Contact() {
                     {`Desenvolvi esse projeto no meu tempo livre, para estudar e
                      também ter minha própria página com algumas coisas que posso fazer. 
                      Você pode verificar o repositório no github `}
-                    <a href="https://github.com/LuizzBanndera/next-portfolio">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/LuizzBanndera/next-portfolio"
+                    >
                       aqui.
                     </a>
                   </div>
@@ -176,7 +182,11 @@ export default function Contact() {
                     {`A idéia era desenvolver um template simples para dashboard que ja vem pré-configurado para que você so precise 
                 informar as rotas das paginas que criar e os icones que deseja para cada item do menu.
                 Utilizei typescript e styled-components para todos os elementos. Você pode verificar o repositório `}
-                    <a href="https://github.com/LuizzBanndera/ts-front">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/LuizzBanndera/ts-front"
+                    >
                       aqui.
                     </a>
                   </div>
@@ -190,6 +200,76 @@ export default function Contact() {
                     <li>
                       <strong>Styled: </strong>
                       {`Utilizei styled-components em todo o projeto com um unico arquivo para componente e estilização.`}
+                    </li>
+                  </ul>
+                </>
+              </Modal>
+              <Card
+                title="Valorant-wikii"
+                image={ValorantWikii}
+                onClick={() => setValorantWiki(true)}
+                description={`Wiki não oficial do jogo VALORANT.`}
+                tags={
+                  <>
+                    <Tags
+                      description="typescript"
+                      background="#1066bf"
+                      fontColor="whitesmoke"
+                    />
+                    <Tags
+                      description="next-js"
+                      background="#000000"
+                      fontColor="whitesmoke"
+                    />
+                    <Tags
+                      description="scss"
+                      background="hsl(330deg 51% 61%)"
+                      fontColor="whitesmoke"
+                    />
+                  </>
+                }
+              />
+              <Modal isOpen={valorantWiki}>
+                <>
+                  <h1 id={Styles.title}>Sobre o Valorant-wikii</h1>
+                  <div>
+                    {`valorant wiki foi feito em next e utiliza uma api-publica(não oficial) do
+                    jogo VALORANT para exibir detalhes de agentes, mapas, etc... github do projeto `}
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/luizfbalves/valorant-wikii"
+                    >
+                      aqui.
+                    </a>
+                    {` wiki `}
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://valorant-wikii.vercel.app/"
+                    >
+                      aqui.
+                    </a>
+                  </div>
+                  <h1>Tecnologias</h1>
+                  <ul>
+                    <li>
+                      <strong>Typescritpt: </strong>
+                      {`O projeto possui as práticas de tipagem mais utilizadas.`}
+                    </li>
+                    <br />
+                    <li>
+                      <strong>Next-js: </strong>
+                      {`Next-js é um dos frameworks mais populares para
+                       projetos SEO, usar next para um projeto de portfólio é essencial
+                       uma vez que esse tipo de página precisa ser facilmente indexada por
+                       mecanismos de pesquisa.`}
+                    </li>
+                    <br />
+                    <li>
+                      <strong>styled-components: </strong>
+                      {`styled-components utiliza template literals para estilizar componentes. 
+                      Ele remove o mapeamento entre componentes e estilos.`}
                     </li>
                   </ul>
                 </>
